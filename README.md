@@ -1,3 +1,4 @@
+
 # 📥 tg-downloader
 
 **Script para salvar conteúdo de grupos e canais do Telegram.**
@@ -18,17 +19,46 @@ Este script é uma ferramenta de automação desenvolvida em Python para realiza
 
 Antes de começar, você precisará:
 
-1.  **Python 3.8+** instalado e adicionado ao PATH.
+1.  **Python <3.12** (testado com 3.11.9)
 2.  Uma conta no Telegram.
 3.  **API ID e API HASH**:
     * Acesse [my.telegram.org](https://my.telegram.org).
     * Vá em "API Development tools".
     * Crie um novo aplicativo (pode colocar qualquer nome e URL) para obter seu `App api_id` e `App api_hash`.
+  
+## 🛠️ Instalação 
+Se já possui o python na versão 3.11 pule para a [instalação do Script](#Para-instalar-o-script).
 
-## 🛠️ Instalação e Uso
+### Instalando o Python na versão correta
+Possivelmente você está utilizando uma versão superior (3.12+), porém o script usa o tgcrypto e ele não é compatível
+Para isto, instale a versão do python anterior, o script foi testado nas versões 3.11.9 e 3.11.0b4, para ter duas versões do python, tem duas formas simples:
 
-1.  Execute **`install_requirements.bat`** para instalar as dependências necessárias automaticamente.
-2.  Execute **`tg_downloader.bat`** para iniciar o programa.
+*  Utilizando o [pyenv-win](https://github.com/pyenv-win/pyenv-win), um gerenciador de versões do python.
+* Utilizando o [UV](https://github.com/astral-sh/uv), um gerenciador de pacotes e versões extremamente rápido e simples (recomendado).
+#### 1. Para instalar com o Pyenv
+1.  Abra o powershell como administrador e insira o seguinte código:``Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine``
+2.  Após isto, digite S (ou Y)
+3.  Insira o seguinte comando:
+   ```bash 
+       Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
+   ```
+4. Instale a versão do python desejada com o comando:``pyenv install 3.11.0b4``
+5. Feche o PowerShell., abra o CMD e navegue até a pasta do script
+6.  Determine a utilização da versão baixada: ``pyenv local 3.11.0b4``
+7. Crie o ambiente virtual com: ``python -m venv .venv``
+8. Agora inicie o ambiente virtual: ``.venv\Scripts\activate``
+9. Pronto, seu ambiente virtual está ativado e pronto para iniciar a execução do script
+ #### 2. Para instalar com o UV (recomendado)
+1.  Abra o powershell como administrador e insira o seguinte código: ``irm https://astral.sh/uv/install.ps1 | iex``
+2.  Feche o PowerShell., abra o CMD e navegue até a pasta do script e insira: ``uv venv --python 3.11 .venv``
+3. Digite este comando para ativar o ambiente virtual: ``.venv\Scripts\Activate``
+4. Pronto, seu ambiente virtual está ativado e pronto para iniciar a execução do script
+
+ ### Para instalar o script
+1.  Primeiro, instale as dependencias necessárias:
+* Se usou o pyenv ou já possui a versão do python correta: ``pip install -r requirements.txt``
+* Se usou o UV: ``uv pip install -r requirements.txt``
+2.  Rode o script (independente do uso de pyenv ou UV): ``python.exe main.py``
 
 ## ⚙️ Primeira Execução
 
