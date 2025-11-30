@@ -40,28 +40,58 @@ Para isto, instale a versão do python anterior, o script foi testado nas versõ
 ```
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
 ```
-4.  Após isto, digite S (ou Y)
-5.  Insira o seguinte comando:
-   ```bash 
-       Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
-   ```
-4. Instale a versão do python desejada com o comando:``pyenv install 3.11.0b4``
+2.  Após isto, digite `S (ou Y)`
+3.  Insira o seguinte comando:
+```
+Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
+```
+4. Instale a versão do python desejada com o comando:
+```
+pyenv install 3.11.0b4
+```
 5. Feche o PowerShell., abra o CMD e navegue até a pasta do script
-6.  Determine a utilização da versão baixada: ``pyenv local 3.11.0b4``
-7. Crie o ambiente virtual com: ``python -m venv .venv``
-8. Agora inicie o ambiente virtual: ``.venv\Scripts\activate``
+6.  Determine a utilização da versão baixada:
+```
+yenv local 3.11.0b4
+```
+7. Crie o ambiente virtual com:
+```
+python -m venv .venv
+```
+8. Agora inicie o ambiente virtual:
+```
+.venv\Scripts\activate
+```
 9. Pronto, seu ambiente virtual está ativado e pronto para iniciar a execução do script
  #### 2. Para instalar com o UV (recomendado)
-1.  Abra o powershell como administrador e insira o seguinte código: ``irm https://astral.sh/uv/install.ps1 | iex``
-2.  Feche o PowerShell., abra o CMD e navegue até a pasta do script e insira: ``uv venv --python 3.11 .venv``
-3. Digite este comando para ativar o ambiente virtual: ``.venv\Scripts\Activate``
-4. Pronto, seu ambiente virtual está ativado e pronto para iniciar a execução do script
+1.  Abra o powershell como administrador e insira o seguinte código:
+```
+irm https://astral.sh/uv/install.ps1 | iex
+```
+2.  Feche o PowerShell., abra o CMD e navegue até a pasta do script e insira:
+```
+uv venv --python 3.11 .venv
+```
+3. Digite este comando para ativar o ambiente virtual:
+```
+.venv\Scripts\Activate
+```
+6. Pronto, seu ambiente virtual está ativado e pronto para iniciar a execução do script
 
  ### Para instalar o script
 1.  Primeiro, instale as dependencias necessárias:
-* Se usou o pyenv ou já possui a versão do python correta: ``pip install -r requirements.txt``
-* Se usou o UV: ``uv pip install -r requirements.txt``
-2.  Rode o script (independente do uso de pyenv ou UV): ``python.exe main.py``
+* Se usou o pyenv ou já possui a versão do python correta:
+```
+pip install -r requirements.txt
+```
+* Se usou o UV:
+```
+uv pip install -r requirements.txt
+```
+2.  Rode o script (independente do uso de pyenv ou UV):
+```
+python.exe main.py
+```
 
 ## ⚙️ Primeira Execução
 
