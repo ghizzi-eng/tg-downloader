@@ -57,3 +57,5 @@ O uso de scripts de automação (userbots) está sujeito aos Termos de Serviço 
 * Use com responsabilidade e por sua conta e risco.
 * Evite baixar canais gigantescos em um espaço de tempo muito curto para evitar limitações temporárias na sua conta.
 * Este software é para uso educacional e pessoal.
+* Este código foi feito com ajuda de IA.
+
