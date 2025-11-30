@@ -28,8 +28,8 @@ Antes de começar, você precisará:
   
 ## 🛠️ Instalação 
 Se já possui o python na versão 3.11, basta executar os seguintes arquivos.
-* ''install_requirements.bat`` para instalar as dependencias necessárias.
-* ''tg_downloader.bat`` iniciar o script.
+* `install_requirements.bat` para instalar as dependencias necessárias.
+* `tg_downloader.bat` iniciar o script.
 
 ### Instalando o Python na versão correta
 Possivelmente você está utilizando uma versão superior (3.12+), porém o script usa o tgcrypto e ele não é compatível
