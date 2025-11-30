@@ -37,7 +37,9 @@ Para isto, instale a versão do python anterior, o script foi testado nas versõ
 * Utilizando o [UV](https://github.com/astral-sh/uv), um gerenciador de pacotes e versões extremamente rápido e simples (recomendado).
 #### 1. Para instalar com o Pyenv
 1.  Abra o powershell como administrador e insira o seguinte código:
-```Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine```
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+```
 4.  Após isto, digite S (ou Y)
 5.  Insira o seguinte comando:
    ```bash 
