@@ -59,3 +59,10 @@ O uso de scripts de automação (userbots) está sujeito aos Termos de Serviço 
 * Evite baixar canais gigantescos em um espaço de tempo muito curto para evitar limitações temporárias na sua conta.
 * Este software é para uso educacional e pessoal.
 * Este código foi feito com ajuda de IA.
+
+## ⚠️ Limitações 
+
+* Requer acesso ao grupo (membro ou link de convite)
+* Alguns tópicos podem ter restrições de acesso
+* Arquivos muito grandes podem falhar em conexões lentas
+* Rate limit da API do Telegram pode causar pausas
