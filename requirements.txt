@@ -1,5 +1,4 @@
 pyrofork==2.3.48
 tgcrypto
-pyfiglet
-colorama
 tqdm
+
