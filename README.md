@@ -54,8 +54,8 @@ Ao rodar o script pela primeira vez (e caso não exista o arquivo `user.session`
 ## ⚠️ Aviso 
 
 O uso de scripts de automação (userbots) está sujeito aos Termos de Serviço do Telegram.
-* Use com responsabilidade e por sua conta e risco.
+* Utilize para fins educacionais apenas.
+* Use com responsabilidade e garanta que você tenha os direitos e permissões necessários para realizar as operações.
 * Evite baixar canais gigantescos em um espaço de tempo muito curto para evitar limitações temporárias na sua conta.
 * Este software é para uso educacional e pessoal.
 * Este código foi feito com ajuda de IA.
-
