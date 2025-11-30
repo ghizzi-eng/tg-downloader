@@ -27,7 +27,9 @@ Antes de começar, você precisará:
     * Crie um novo aplicativo (pode colocar qualquer nome e URL) para obter seu `App api_id` e `App api_hash`.
   
 ## 🛠️ Instalação 
-Se já possui o python na versão 3.11 pule para a [instalação do Script](#Para-instalar-o-script).
+Se já possui o python na versão 3.11, basta executar os seguintes arquivos.
+* ''install_requirements.bat`` para instalar as dependencias necessárias.
+* ''tg_downloader.bat`` iniciar o script.
 
 ### Instalando o Python na versão correta
 Possivelmente você está utilizando uma versão superior (3.12+), porém o script usa o tgcrypto e ele não é compatível
