@@ -36,9 +36,10 @@ Para isto, instale a versão do python anterior, o script foi testado nas versõ
 *  Utilizando o [pyenv-win](https://github.com/pyenv-win/pyenv-win), um gerenciador de versões do python.
 * Utilizando o [UV](https://github.com/astral-sh/uv), um gerenciador de pacotes e versões extremamente rápido e simples (recomendado).
 #### 1. Para instalar com o Pyenv
-1.  Abra o powershell como administrador e insira o seguinte código:``Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine``
-2.  Após isto, digite S (ou Y)
-3.  Insira o seguinte comando:
+1.  Abra o powershell como administrador e insira o seguinte código:
+```Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine```
+4.  Após isto, digite S (ou Y)
+5.  Insira o seguinte comando:
    ```bash 
        Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
    ```
